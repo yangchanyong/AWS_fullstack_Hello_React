@@ -2,7 +2,7 @@ import MyComponent from './MyComponent';
 
 const App = () => {
   return (
-    <MyComponent name="react">Hello</MyComponent>
+    <MyComponent name="react">Hello React</MyComponent>
   );
 };
 
