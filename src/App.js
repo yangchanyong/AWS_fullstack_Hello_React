@@ -1,6 +1,6 @@
 // import ValidationSample from "./ValidationSample";
-import Scrollbox from "./Scrollbox.js";
-
+// import Scrollbox from "./Scrollbox.js";
+import IterationSample from "./IterationSample";
 import React, {Component} from "react";
 
 class App extends Component {
@@ -8,9 +8,7 @@ class App extends Component {
 
     return (
       <div>
-        <Scrollbox ref={(ref) =>(this.scrollbox = ref)}/>
-        <button onClick={() => this.scrollbox.scrollToHigh()}>맨 위로</button>
-        <button onClick={() => this.scrollbox.scrollToBottom()}>맨 밑으로</button>
+          <IterationSample />
       </div>
     );
   };
