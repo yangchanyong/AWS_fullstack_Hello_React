@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        .success {background-color: green;}
+        .failure {background-color: red;}
+    </style>
+    <script>
+        function validate() {
+            var input = document.getElementById("password");
+            input.className = '';
+            if(input.value === '0000') {
+                input.className = 'success';
+            }
+            else {
+                input.className = 'failure'
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="password" id="password">
+    <button onclick="validate()">Validate</button>
+</body>
+</html>
